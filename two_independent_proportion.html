@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two independent Proportions</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="calculate.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <p><h3>Two independent proportions</h3></p>
+        </div>
+        <div class="sub_header1">
+            <p>Formula:
+                <img src="./pic/two_independent_proportion.png" alt="">
+            </p>
+            <form action="">
+                <p>Proportion in group1 (p1) = <br><input type="number" id="p1" name="p1"></p>
+                <p>Proportion in group2 (p2) = <br><input type="number" id="p2" name="p2"></p>
+                <p>Ratio (r) = <br><input type="number" id="r" name="r"></p>
+                <p>Alpha (&alpha;) = <br>
+                    <input type="radio" id="alpha1" name="alpha"  value=0.05 checked>
+                    0.05 <br>
+                    <input type="radio" id="alpha2" name="alpha" value=0.01>
+                    0.01
+                </p>
+                <p>Beta (&beta;) = <br>
+                    <input type="radio" id="beta1" name="beta1"  value=0.2 checked>
+                    0.2 <br>
+                    <input type="radio" id="beta2" name="beta1" value=0.1>
+                    0.1
+                </p>
+                <p><input type="reset" value="Clear"></p>
+            </form>
+            <p><button onclick="two_independent_proportion()">Calulate</button></p>
+            <p id="get_z">Z Alpha =</p>
+            <p id="get_b">Z Beta =</p>
+            <p id="output">Result:</p>
+            <p>
+                Reference:<br>
+                Bernard, R. (2000). Fundamental of biostatistics (5th ed.) Duxbery: Thomson learning, 384-385.
+            </p>
+        </div>
+        <div class="footer">
+            <div class="ft-l">
+                <img src="./pic/namo.png" alt="">
+                <p>Chatuphorn Suami</p>
+        </div>
+            <div class="ft-r">
+                <p>2021-12-25</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

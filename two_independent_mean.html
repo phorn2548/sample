@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Independent Mean</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="calculate.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <p><h3>Two independent mean</h3></p>
+        </div>
+        <div class="sub_header1">
+            <p>Formula:
+                <img src="./pic/two_independent_mean.png" alt="">
+            </p>
+            <form action="">
+                <p>Mean in group1 (&mu;1) = <br><input type="text" id="mu1" name="mu1"></p>
+                <p>Mean in group2 (&mu;2) = <br><input type="text" id="mu2" name="mu2"></p>
+                <p>SD. in group1 (&sigma;1) = <br><input type="text" id="sd1" name="sd1"></p>
+                <p>SD. in group2 (&sigma;2) = <br><input type="text" id="sd2" name="sd2"></p>
+                <p>Ratio (r) = <br><input type="text" id="r" name="r"></p>
+                <p>Alpha (&alpha;) = <br>
+                    <input type="radio" id="alpha1" name="alpha"  value=0.05 checked>
+                    0.05 <br>
+                    <input type="radio" id="alpha2" name="alpha" value=0.01>
+                    0.01
+                </p>
+                <p>Beta (&beta;) = <br>
+                    <input type="radio" id="beta1" name="beta1"  value=0.2 checked>
+                    0.2 <br>
+                    <input type="radio" id="beta2" name="beta1" value=0.1>
+                    0.1
+                </p>
+                <p><input type="reset" value="Clear"></p>
+            </form>
+            <p><button onclick="two_independent_mean()">Calulate</button></p>
+            <p id="get_z">Z Alpha =</p>
+            <p id="get_b">Z Beta =</p>
+            <p id="output">Result:</p>
+            <p>
+                Reference:<br>
+                Bernard, R. (2000). Fundamentals of Biostatistics (5th ed). Duxbery: Thomson learning, 308.
+            </p>
+        </div>
+        <div class="footer">
+            <div class="ft-l">
+                <img src="./pic/namo.png" alt="">
+                <p>Chatuphorn Suami</p>
+        </div>
+            <div class="ft-r">
+                <p>2021-12-25</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

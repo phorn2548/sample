@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Population Mean</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="calculate.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <p><h3>Estimating an infinite<br>population mean</h3></p>
+        </div>
+    
+        <div class="sub_header1">
+            <!--<h3></h3>-->
+            <p>Formula:
+                <img src="./pic/infinite_mean.png" alt="">
+            </p>
+            <form action="">
+                <p>Standard deviation (&sigma;) = <br><input type="text" id="sd" name="sd"> </p>
+                <p>Error (d) = <br><input type="text" id="d" name="d"></p>
+                <p>Alpha (&alpha;) = <br>
+                    <input type="radio" id="alpha1" name="alpha"  value=0.05 checked>
+                    0.05 <br>
+                    <input type="radio" id="alpha2" name="alpha" value=0.01>
+                    0.01
+                </p>
+                <p>
+                    <input type="reset" value="Clear">
+                </p>
+            </form>
+            <p><button onclick="infinite_mean()">Calculate</button></p>
+            <p id="get_z">Z =</p>
+            <p id="output">Result:</p>
+            <p>
+                Reference:<br>
+                Wayne W.,D. (1995) Biostatistics: A Foundation of Analysis in the
+                Health Sciences (6th ed.). John Wiley&Sons,Inc.,177-178.
+            </p>
+        </div>
+        <div class="footer">
+            <div class="ft-l">
+                <img src="./pic/namo.png" alt="">
+                <p>Chatuphorn Suami</p>
+        </div>
+            <div class="ft-r">
+                <p>2021-12-25</p>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
